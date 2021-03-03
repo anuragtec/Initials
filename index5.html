@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../JS/jquery-ui.min.css">
+
+    <link rel="stylesheet" href="../CSS/style5.css">
+
+</head>
+
+<body >
+    <!-- ------------------Registrtion form-------------------------------------------------------------- -->
+
+    <div class=" sty container-fluid d-flex justify-content-center pt-4">
+        <h2 class="lightc"> Registration Form</h2>
+    </div>
+
+    <!-- ------------------Personal details--------------------------------------- -->
+    <div class=" backImgJQ container d-flex justify-content-center pt-4">
+        <div class="card cardcustom">
+            <div class="card-body">
+
+                <div class="sty1 d-flex justify-content-center ">
+                    <h3>Personal Details</h3>
+                </div><br><br>
+
+                <form>
+                    <div class="form-group">
+                        <label >Name</label>
+                        <input type="name" class="form-control" placeholder="Enter Name" id="uname">
+                        <h5 class="text-danger" id="unameCheck"></h5>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email address</label>
+                        <input type="email" id="idemail" class="form-control" placeholder="Enter email">
+                        <h5 class="text-danger" id="emailcheck"></h5>
+                        <!-- <small id="idemail" class="form-text text-muted"></small> -->
+                    </div>
+
+                    <div class="form-group">
+                        <label>Gender</label>
+
+                        <div class="form-check form-control form-group pl-4">
+                            <input type="radio" class="form-check-input" name="Gender">
+                            <label class="form-check-label">Male</label><br>
+
+                            <input type="radio" class="form-check-input" name="Gender">
+                            <label class="form-check-label">Female</label>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Phone no</label>
+                        <input type="tel" id="idphone" class="form-control" placeholder="Phone">
+                        <h5 class="text-danger" id="phonecheck"></h5>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password"  id="idpass" class="form-control" placeholder="Password">
+                        <h5 class="text-danger" id="passcheck"></h5>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Confirm Password</label>
+                        <input type="password" id="idcpass" class="form-control" placeholder="Confirm Password">
+                        <h5 class="text-danger" id="cpasscheck"></h5>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="datepick">Date of Birth:</label>
+                        <input type="text" class="form-control" id="datepick">
+                    </div>
+
+                    <!-- ------------------Eduational details--------------------------------------- -->
+                    <div class="sty1 d-flex justify-content-center">
+                        <h3 class="pb-4 ">Educational Details</h3>
+                    </div>
+
+                    <div class="form-group pt-4">
+                        <label> Qualification:</label>
+                        <select id="quali"  class="form-control">
+
+                            <option value="btech">BE</option>
+                            <option value="bcom">Bcom</option>
+                            <option value="bsc">BSC</option>
+
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Branch</label>
+                        <input type="text" id="idbranch" class="form-control" placeholder="College">
+                        <h5 class="text-danger" id="branchcheck "></h5>
+                    </div>
+
+                    <div class="form-group ">
+                        <label>College</label>
+                        <input type="text" id="idcollege" class="form-control" placeholder="College">
+                        <h5 class="text-danger" id="collegecheck"></h5>
+                    </div>
+
+                    
+
+                    <div class="form-group">
+                        <label> 10th Marks (In percentage) </label>
+                        <input type="number" id="id10" class="form-control" placeholder="10th Marks">
+                        <h5 class="text-danger" id="10check"></h5>
+                    </div>
+
+                    <div class="form-group">
+                        <label> 12th Marks (In percentage) </label>
+                        <input type="number" id="id12" class="form-control" placeholder="10th Marks">
+                        <h5 class="text-danger" id="12check"></h5>
+                    </div>
+                    <!-- ------------------Work Exp details--------------------------------------- -->
+
+                    <div class="sty1 d-flex justify-content-center ">
+                        <h3 class="pb-4 ">Work Experience Details</h3>
+                    </div>
+                    <div class="form-group pt-4 ">
+                        <label>Company Name</label>
+                        <input type="text" id="idcompany" class="form-control" placeholder="Company name">
+                        <h5 class="text-danger" id="companycheck"></h5>
+                    </div>
+                    <div class="form-group ">
+                        <label> Work Experience</label>
+                        <input type="number" id="idexp" class="form-control" placeholder="Experience in Years">
+                        <h5 class="text-danger" id="expcheck"></h5>
+                    </div>
+
+                    <div class="form-group ">
+                        <label> Profile </label>
+                        <input type="number" id="idprofile" class="form-control" placeholder="Profile">
+                        <h5 class="text-danger" id="profilecheck"></h5>
+                    </div>
+
+                    <div class="form-group ">
+                        <label> Note Period (If any) </label>
+                        <input type="number" id="idnotice" class="form-control" placeholder="Notice (In months) ">
+                        <h5 id="noticecheck"></h5>
+                    </div>
+
+                    <div class=" d-flex justify-content-center pt-4">
+                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                        
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div><br><br><br>
+    <!-- ------------------Login form form-------------------------------------------------------------- -->
+
+    <div class=" pt-4 sty container-fluid d-flex justify-content-center ">
+        <h2 class="lightc"> Login Form </h2>
+    </div><br> <br>
+
+    <div class=" backImgJQ container d-flex justify-content-center pt-4">
+        <div class="card cardcustom">
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label>Username</label>
+                        <input type="name" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
+
+                    <div class=" d-flex justify-content-center pt-4">
+                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div><br><br><br>
+
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    <script src="../JS/jquery-ui.min.js"></script>
+    <!-- <script src="D:\HTML5 CSS3_Exam\JS\jquery.js"></script> -->
+    <script src="../JS/Myapp5.js"></script>
+</body>
+
+</html>
